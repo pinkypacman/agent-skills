@@ -9,7 +9,7 @@ Usage:
                                      unknown to git at REF are reported in full
   measure.py --all PATH...           also list functions within limits
 
-Default limits (override with --max-<name>): file 400 code lines; per function 50 statements,
+Default limits (override with --max-<name>): file 250 code lines; per function 50 statements,
 5 arguments, 12 branches, nesting 5 (pylint max-statements / max-args / max-branches /
 max-nested-blocks), cyclomatic 10 (McCabe), cognitive 15 (SonarSource rule S3776).
 Documentation (skip with --no-docs): every function has a docstring and every for/while loop has
@@ -26,7 +26,7 @@ import sys
 import tokenize
 from pathlib import Path
 
-LIMITS = dict(file=400, statements=50, args=5, branches=12, nesting=5, complexity=10, cognitive=15,
+LIMITS = dict(file=250, statements=50, args=5, branches=12, nesting=5, complexity=10, cognitive=15,
               missing_doc=0, bare_loops=0)
 SIZE_KEYS = ('statements', 'args', 'branches', 'nesting', 'complexity', 'cognitive')
 DOC_KEYS = ('missing_doc', 'bare_loops')

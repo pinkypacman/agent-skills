@@ -23,7 +23,7 @@ The after-edit hook (`hook.py`) runs the `--since HEAD` form on every edited fil
 
 | Measure | Limit | Source |
 |---|---|---|
-| code lines per file | 400 | stricter than pylint `max-module-lines` (1000) |
+| code lines per file | 250 | owner rule 2026-10-14, tests included; far stricter than pylint `max-module-lines` (800) |
 | statements per function | 50 | pylint `max-statements` |
 | arguments per function | 5 | pylint `max-args` |
 | branches per function | 12 | pylint `max-branches` |
