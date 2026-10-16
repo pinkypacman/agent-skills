@@ -20,3 +20,4 @@ it as a `PostToolUse` hook on `Edit|Write|MultiEdit` in a Claude Code settings f
 | `structure` | draws a code folder as an Input → Process → Output figure in its `STRUCTURE.md` |
 | `bulk-review` | flags code too long or tangled to review; `REFACTOR.md` branch plans a refactor with the owner |
 | `spec` | turns a goal into a reviewable spec: aim, acceptance checks, file map, planned IPO figure |
+| `ticket-review` | reviews a Scrum ticket (plan or hand-off) with independent reviewer subagents and a verifying arbiter; project specifics come from a private review config named in the project's `CLAUDE.md` / `AGENTS.md` |
