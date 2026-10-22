@@ -21,3 +21,5 @@ it as a `PostToolUse` hook on `Edit|Write|MultiEdit` in a Claude Code settings f
 | `bulk-review` | flags code too long or tangled to review; `REFACTOR.md` branch plans a refactor with the owner |
 | `spec` | turns a goal into a reviewable spec: aim, acceptance checks, file map, planned IPO figure |
 | `ticket-review` | reviews a Scrum ticket (plan or hand-off) with independent reviewer subagents and a verifying arbiter; project specifics come from a private review config named in the project's `CLAUDE.md` / `AGENTS.md` |
+| `ticket-loop` | runs one ticket from Ready to In Review as an orchestrator of pinned-model subagents, with two owner checkpoints (before launch, at hand-off); user-invoked; project specifics come from a private loop config |
+| `sprint-manager` | product manager for a sprint: status card (slip, slack, review load, next launch), replan, the planning pipeline with owner stops, sprint close; user-invoked; project specifics come from a private sprint config |
